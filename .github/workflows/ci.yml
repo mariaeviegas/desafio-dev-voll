@@ -73,4 +73,4 @@ jobs:
           RAILS_ENV: test
           DATABASE_URL: mysql2://root@127.0.0.1:3306/test_database
         run: |
-          bin/rails db:create db:schema:load
+          run: bin/rails db:create db:migrate db:test:prepare
